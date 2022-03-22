@@ -119,7 +119,7 @@ export default class SendCreate extends Component {
           <Text style={styles.transactionDetailsSubtitle}>{item.address}</Text>
           <Text style={styles.transactionDetailsTitle}>{loc.send.create_amount}</Text>
           <Text style={styles.transactionDetailsSubtitle}>
-            {currency.satoshiToBTC(item.value)} {BitcoinUnit.XEP}
+            {currency.satoshiToBTC(item.value)} {BitcoinUnit.BARI}
           </Text>
           {this.state.recipients.length > 1 && (
             <BlueText style={styles.itemOf}>
@@ -163,7 +163,7 @@ export default class SendCreate extends Component {
               />
               <Text style={styles.transactionDetailsTitle}>{loc.send.create_fee}</Text>
               <Text style={styles.transactionDetailsSubtitle}>
-                {new BigNumber(this.state.fee).toFixed()} {BitcoinUnit.XEP}
+                {new BigNumber(this.state.fee).toFixed()} {BitcoinUnit.BARI}
               </Text>
 
               <Text style={styles.transactionDetailsTitle}>{loc.send.create_tx_size}</Text>
