@@ -18,7 +18,7 @@ class DeeplinkSchemaMatch {
       lowercaseString.startsWith('blue:') ||
       lowercaseString.startsWith('bluewallet:') ||
       lowercaseString.startsWith('lapp:') ||
-      lowercaseString.startsWith('xep:') ||
+      lowercaseString.startsWith('bari:') ||
       lowercaseString.startsWith('aopp:')
     );
   }
@@ -430,7 +430,7 @@ class DeeplinkSchemaMatch {
   }
 
   static bip21decode(uri) {
-    return bip21.decode(uri.replace('xep:', ''));
+    return bip21.decode(uri.replace('bari:', ''));
   }
 
   static bip21encode() {

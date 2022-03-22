@@ -152,7 +152,7 @@ const ReceiveDetails = () => {
     toolTip.current.showMenu();
   };
   const renderReceiveDetails = () => {
-    let showQRData = bip21encoded.replace("bitcoin:", "xep:");
+    let showQRData = bip21encoded.replace("bitcoin:", "bari:");
     showQRData = showQRData.replace("label", "message");
     return (
       <ScrollView contentContainerStyle={styles.root} keyboardShouldPersistTaps="always">
@@ -361,7 +361,7 @@ const ReceiveDetails = () => {
   };
 
   const handleShareButtonPressed = () => {
-    let shareAddress = bip21encoded.replace("bitcoin", "xep")
+    let shareAddress = bip21encoded.replace("bitcoin", "bari")
     Share.open({ message: shareAddress }).catch(error => console.log(error));
   };
 
@@ -371,11 +371,11 @@ const ReceiveDetails = () => {
   const getDisplayAmount = () => {
     switch (customUnit) {
       case BitcoinUnit.BTC:
-        return customAmount + ' XEP';
+        return customAmount + ' BARI';
       case BitcoinUnit.SATS:
-        return currency.satoshiToBTC(customAmount) + ' XEP';
+        return currency.satoshiToBTC(customAmount) + ' BARI';
       case BitcoinUnit.LOCAL_CURRENCY:
-        return currency.fiatToBTC(customAmount) + ' XEP';
+        return currency.fiatToBTC(customAmount) + ' BARI';
     }
     return customAmount + ' ' + customUnit;
   };

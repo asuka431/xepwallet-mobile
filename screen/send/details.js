@@ -1141,7 +1141,7 @@ const SendDetails = () => {
                   item.amountSats = parseInt(item.amount);
                   break;
                 case BitcoinUnit.BTC:
-                case BitcoinUnit.XEP:
+                case BitcoinUnit.BARI:
                   item.amountSats = currency.btcToSatoshi(item.amount);
                   break;
                 case BitcoinUnit.LOCAL_CURRENCY:
