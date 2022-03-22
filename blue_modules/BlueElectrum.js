@@ -40,9 +40,9 @@ async function _getRealm() {
 }
 
 const storageKey = 'ELECTRUM_PEERS';
-const defaultPeer = { host: 'electrumx1.electraprotocol.eu', ssl: '50002' };
+const defaultPeer = { host: 'baricoin.clear-net.jp', ssl: '50002' };
 const hardcodedPeers = [
-  { host: 'electrumx1.electraprotocol.eu', ssl: '50002' },
+  { host: 'baricoin.clear-net.jp', ssl: '50002' },
   //{ host: 'electrumx2.electraprotocol.eu', ssl: '50002' },
   //{ host: 'electrumx3.electraprotocol.eu', ssl: '50002' },
   //{ host: 'electrumx4.electraprotocol.eu', ssl: '50002' },

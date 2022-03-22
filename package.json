@@ -91,7 +91,7 @@
     "bip21": "2.0.3",
     "bip32": "git+https://github.com/ElectraProtocol/bip32.git",
     "bip39": "2.6.0",
-    "bitcoinjs-lib": "git+https://github.com/ElectraProtocol/bitcoinjs-lib.git",
+    "bitcoinjs-lib": "git+https://github.com/asuka431/bitcoinjs-lib.git",
     "bitcoinjs-message": "2.2.0",
     "bolt11": "1.3.1",
     "buffer": "6.0.3",

@@ -366,7 +366,7 @@ const SendDetails = () => {
     }
 
     console.log('===options', options, address);
-    if (btcAddressRx.test(address) || address.startsWith('ep1') || address.startsWith('EP1')) {
+    if (btcAddressRx.test(address) || address.startsWith('bari1') || address.startsWith('BARI1')) {
       setAddresses(addresses => {
         addresses[scrollIndex.current].address = address;
         addresses[scrollIndex.current].amount = options.amount;
