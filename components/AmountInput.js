@@ -60,7 +60,7 @@ class AmountInput extends Component {
     let sats = 0;
     switch (previousUnit) {
       case BitcoinUnit.BTC:
-      case BitcoinUnit.XEP:
+      case BitcoinUnit.BARI:
         sats = new BigNumber(amount).multipliedBy(100000000).toString();
         break;
       case BitcoinUnit.SATS:
@@ -173,7 +173,7 @@ class AmountInput extends Component {
     let sat;
     switch (unit) {
       case BitcoinUnit.BTC:
-      case BitcoinUnit.XEP:
+      case BitcoinUnit.BARI:
         sat = new BigNumber(amount).multipliedBy(100000000).toString();
         secondaryDisplayCurrency = formatBalanceWithoutSuffix(sat, BitcoinUnit.LOCAL_CURRENCY, false);
         break;

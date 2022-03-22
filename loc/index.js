@@ -264,7 +264,7 @@ export function formatBalance(balance, toUnit, withFormatting = false) {
   if (toUnit === undefined) {
     return balance + ' ' + strings.units[BitcoinUnit.BTC];
   }
-  if (toUnit === BitcoinUnit.BTC || toUnit === BitcoinUnit.XEP) {
+  if (toUnit === BitcoinUnit.BTC || toUnit === BitcoinUnit.BARI) {
     const value = new BigNumber(balance).dividedBy(100000000).toFixed(8);
     return removeTrailingZeros(value) + ' ' + strings.units[BitcoinUnit.BTC];
   } else if (toUnit === BitcoinUnit.SATS) {

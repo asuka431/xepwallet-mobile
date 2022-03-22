@@ -97,7 +97,7 @@ export class AbstractWallet {
         return this.preferredBalanceUnit;
       }
     }
-    return BitcoinUnit.XEP;
+    return BitcoinUnit.BARI;
   }
 
   allowReceive() {
